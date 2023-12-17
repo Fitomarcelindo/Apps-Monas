@@ -6,17 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomePage">
+    tools:context=".Home_Page_Dosen">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_vertical"
         android:background="@drawable/bc_homepage"
         android:orientation="horizontal"
         tools:ignore="MissingConstraints">
 
         <ImageButton
+            android:id="@+id/btn_img"
             android:layout_width="70dp"
             android:layout_height="65dp"
             android:layout_marginTop="20dp"
@@ -44,6 +45,8 @@
     </LinearLayout>
 
     <LinearLayout
+
+        android:id="@+id/kelas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -53,92 +56,58 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginStart="40dp"
             android:layout_marginEnd="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
             android:text="Today is Schdule "
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/class1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginEnd="20dp"
-            android:text="* Pemograman Web || B31 || 505 || Offline"
-            android:textColor="@color/bluebtn"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/class2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginEnd="20dp"
-            android:text="* Pemograman Mobile || A31 || LAB IR  Offline"
-            android:textColor="@color/bluebtn"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+<!--        <TextView-->
+<!--            android:id="@+id/class2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginStart="45dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:textColor="@color/bluebtn"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"/>-->
 
-        <TextView
-            android:id="@+id/class3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginEnd="20dp"
-            android:text="* Teknik Digital || A31 || LAB ES || Offline"
-            android:textColor="@color/bluebtn"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+<!--        <TextView-->
+<!--            android:id="@+id/class3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginStart="45dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:text="* Teknik Digital || A31 || LAB ES || Offline"-->
+<!--            android:textColor="@color/bluebtn"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"/>-->
 
-        <TextView
-            android:id="@+id/class4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="45dp"
-            android:layout_marginEnd="20dp"
-            android:text="* Pemograman SQL || A31 || 901 || Offline"
-            android:textColor="@color/bluebtn"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+<!--        <TextView-->
+<!--            android:id="@+id/class"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginStart="45dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:text="* Pemograman SQL || A31 || 901 || Offline"-->
+<!--            android:textColor="@color/bluebtn"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold"/>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="@color/bluebtn"
-                android:textStyle="bold"
-                android:text="LINK MEET" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="@color/bluebtn"
-                android:textStyle="bold"
-                android:text="EDIT CLASS" />
-        </LinearLayout>
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="60dp"
         android:layout_gravity="center_horizontal">
 
         <ImageButton
@@ -163,4 +132,6 @@
             android:backgroundTint="@color/white"
             android:src="@drawable/profile"/>
     </LinearLayout>
+
+
 </LinearLayout>

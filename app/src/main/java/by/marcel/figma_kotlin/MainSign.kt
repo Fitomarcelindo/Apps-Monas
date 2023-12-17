@@ -15,7 +15,7 @@ class MainSign : AppCompatActivity() {
     private lateinit var btn : ImageView
 
 
-    private val username = listOf("fitto2131001@itpln.ac.id", "Prof.Marcel")
+    private val username = listOf("fitto2131001@itpln.ac.id", "Prof.Marcel", "azmi2131154@itpln.ac.id")
     private val password = "1234"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,19 +33,16 @@ class MainSign : AppCompatActivity() {
                 etpassword.text.toString().equals(password, ignoreCase = true)
             ) {
                 val name = etusername.text.toString().trim()
-                val destinationClass = if (enteredUsername == "fitto2131001@itpln.ac.id") {
-                    // Jika username adalah mahasiswa
-                    HomePage::class.java
-                } else if (enteredUsername == "Prof.Marcel") {
-                    // Jika username adalah dosen
-                    Home_Page_Dosen::class.java
-                } else {
-                    // Default jika tidak dikenali
-                    // Anda dapat menggantinya dengan halaman default atau menampilkan pesan kesalahan
-                    // atau memerintahkan untuk mengisi ulang
-                    // Misalnya:
-                    // Toast.makeText(this@MainSign, "User type not recognized", Toast.LENGTH_SHORT).show()
-                    return@setOnClickListener
+                val destinationClass = when (enteredUsername) {
+                    "fitto2131001@itpln.ac.id", "azmi2131154@itpln.ac.id" -> {
+                        HomePage::class.java
+                    }
+                    "Prof.Marcel" -> {
+                        Home_Page_Dosen::class.java
+                    }
+                    else -> {
+                        return@setOnClickListener
+                    }
                 }
 
                 val login = Intent(this@MainSign, destinationClass).apply {
